@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+.--bg-default {
+  background-color: gray;
+}
+
+.--bg-free {
+  background-color: blue;
+}
+
+.--bg-new {
+  background-color: green;
+}
+
+.c-product__title {
+  font-size: 18px;
+}
+
+.c-product__description {
+  font-size: 16px;
+}

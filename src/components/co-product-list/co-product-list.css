@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+:root {
+  --app-max-width: '1200px';
+  --app-row-margin: '16px';
+}
+
+.c-list {
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: var(--app-row-margin);
+
+  /* Review documentation regarding inbuild wrapper for breakpoint rather than media query directly */
+  /* @include breakpoint("medium") {
+       grid-template-columns: repeat(2, 1fr);
+  } */
+}
+
+
+@media only screen and (min-width: 768px) {
+  .c-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
